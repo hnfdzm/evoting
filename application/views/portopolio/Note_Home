@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="<?php base_url('assets/css/main.css') ?>">
+</head>
+<style>
+    .isi{
+        background-color: gray;
+        padding: 1.5rem;
+    }
+    .content{
+        background-color: lightgray;
+        border-radius: 10px;
+        padding:2rem;
+    }
+</style>
+<body>
+
+    <!-- navbar -->
+    <?php $this->load->view('portopolio/_partials/nav.php'); ?>
+
+    <div class="isi">
+        <div class="content">
+            <div class="inside">
+
+                <section class="about" id="about-select" style="padding:4,5rem;">
+                    <div class="container justify-content-center" style="display: flex; align-items: center;">
+                        <div>
+                            <img src="<?= base_url('assets/img/me.jpg') ?>"  style=" width: 18rem; margin-right: 50px; border-radius: 25px;">
+                        </div>
+                        <div>
+                            <div style="display: flex; align-items:center;">
+                                <h2><b>Hello, my name is Hanif Dzil Ma'arif Azizy</b></h2><br>
+                            </div>
+                            <div>
+                                <h4>Selamat datang di Website Portopolio saya</h4>
+                            </div>
+                                <br>
+                            <div>
+                                <h5><span>Student | Developer | Indonesian Population</span></h6>
+                            </div> 
+                        </div>
+                    </div>  
+                </section>
+
+                <br><br>
+
+                <section id="services" style="padding:2rem;">
+                    <h1 class="text-center">Riwayat Saya</h1>
+                        <div class="row">
+                            <div class="col-lg-4 mt-4">
+                                <div class="card servicesText">
+                                    <div class="card-body">
+                                        <i class="fas servicesIcon fa-clock"></i>
+                                        <h4 class="card-title mt-3">Riwayat Sekolah</h4>
+                                        <p class="card-text mt-3">Seorang Pelajar yang lulus sekolah dasar di MIN 5 Bener Meriah. Lalu saya melanjutkan ke jenjang yang lebih tinggi di Mts Dayah Insan Qur'ani. Dan sekarang saya duduk dibangku SMK.</p>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col-lg-4 mt-4">
+                                <div class="card servicesText">
+                                    <div class="card-body">
+                                        <i class="fas servicesIcon fa-clock"></i>
+                                        <h4 class="card-title mt-3">Riwayat Hidup</h4>
+                                        <p class="card-text mt-3">Saya lahir di desa Lut atas yang berada di belakang gunung Lut Atas, lalu pindah ke kampung Gresek pada usia 9 tahun. Dan sekarang saya pindah ke kampung yang cukup maju akan teknologi, yaitu di kampung Waq Pondok Sayur.</p>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="col-lg-4 mt-4">
+                                <div class="card servicesText">
+                                    <div class="card-body">
+                                        <i class="fas servicesIcon fa-clock"></i>
+                                        <h4 class="card-title mt-3">Riwayat Kerja</h4>
+                                        <p class="card-text mt-3">Saya sudah mulai bekerja sejak umur 10 tahun, meski itu hanya memanen boah kopi dan membawa hasil panen ke daerah lain, seperti Kota Medan, Jambi, Subulussalam, Kuta Cane dan kota lainnya.</p>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <br><br>
+                        <center>
+                            <a href="<?= site_url('about') ?>">
+                                <button type="button" class="btn btn-secondary">Lihat Halaman Tentang</button>
+                            </a> 
+                        </center>
+                        
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+<?php $this->load->view('portopolio/_partials/footer.php'); ?>
+</body>
+</html>
